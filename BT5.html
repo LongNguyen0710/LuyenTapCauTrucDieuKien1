@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = Number(prompt("Enter the test scores"))
+        b = Number(prompt("Enter the midterm exam score"))
+        c = Number(prompt("Enter the final exam score"))
+        n = (a * 2 + b * 3 + c * 4) / 9
+        if (n > 10 || n < 0) {
+            document.write("Điểm số không hợp lệ");
+        } else if (n >= 9) {
+            document.write("Xuất Sắc");
+        } else if (n >= 8) {
+            document.write("Giỏi");
+        } else if (n >= 7) {
+            document.write("Khá");
+        } else if (n >= 6) {
+            document.write("Trung bình khá");
+        } else if (n >= 5) {
+            document.write("Trung bình");
+        } else {
+            document.write("Yếu");
+        }
+    </script>
+</body>
+
+</html>

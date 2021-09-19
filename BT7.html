@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        sophut = parseFloat(prompt("Nhập số phút đã sử dụng"))
+        if (sophut > 200) {
+            phi = ((sophut - 200) * 200 + 150 * 400 + 50 * 600) * 0.01 + 25
+            alert(`Bạn đã gọi ${sophut} phút`)
+            alert(`Số tiền phải nộp của bạn là ${phi}00`)
+        }
+        else if (sophut > 50) {
+            phi = ((sophut - 50) * 400 + 50 * 600) * 0.01 + 25
+            alert(`Bạn đã gọi ${sophut} phút`)
+            alert(`Số tiền phải nộp của bạn là ${phi}00`)
+        }
+        else if (sophut > 0) {
+            phi = (sophut * 600) * 0.01 + 25
+            alert(`Bạn đã gọi ${sophut} phút`)
+            alert(`Số tiền phải nộp của bạn là ${phi}00`)
+        } 
+        else {
+            alert("Vui lòng nhập lại")
+        }
+    </script>
+</body>
+
+</html>
